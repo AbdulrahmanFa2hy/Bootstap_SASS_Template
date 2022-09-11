@@ -10,17 +10,34 @@
   .cta-info {
     padding: 3rem;
     margin: 1rem 0;
+    p {
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 1rem;
+      margin: 0;
+      p {
+        font-size: 15px;
+        line-height: 1.8rem;
+      }
+    }
     &__list {
       position: relative;
       list-style: none;
       display: block;
       padding-top: 0.5rem;
+      line-height: 3rem;
       li::before {
         content: "\f00c";
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         font-size: 1.2rem;
         margin-right: 0.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        line-height: 2.4rem;
       }
     }
   }

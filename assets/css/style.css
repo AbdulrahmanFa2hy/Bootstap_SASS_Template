@@ -10782,6 +10782,11 @@ textarea.form-control-lg {
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
 }
+@media (max-width: 575.98px) {
+  .rounded-pill {
+    padding: 0.5rem 2.375rem 0.5rem 0.5rem;
+  }
+}
 .rounded-pill span {
   position: absolute;
   background-color: #9926f0;
@@ -10792,10 +10797,24 @@ textarea.form-control-lg {
   transform: translateY(-50%);
   border-radius: 50%;
 }
+@media (max-width: 575.98px) {
+  .rounded-pill span {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
 .rounded-pill span i {
   color: #fff;
   font-size: 1rem;
-  line-height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 575.98px) {
+  .rounded-pill span i {
+    font-size: 0.7rem;
+  }
 }
 .rounded-pill:hover {
   background-image: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
@@ -10872,6 +10891,11 @@ textarea.form-control-lg {
 }
 
 .menu {
+  transition: all 0.4s ease-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-image: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
 }
 .menu li {
@@ -11056,11 +11080,27 @@ textarea.form-control-lg {
   padding: 3rem;
   margin: 1rem 0;
 }
+.get-started .cta-info p {
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+@media (max-width: 575.98px) {
+  .get-started .cta-info {
+    padding: 1rem;
+    margin: 0;
+  }
+  .get-started .cta-info p {
+    font-size: 15px;
+    line-height: 1.8rem;
+  }
+}
 .get-started .cta-info__list {
   position: relative;
   list-style: none;
   display: block;
   padding-top: 0.5rem;
+  line-height: 3rem;
 }
 .get-started .cta-info__list li::before {
   content: "\f00c";
@@ -11068,6 +11108,11 @@ textarea.form-control-lg {
   font-weight: 900;
   font-size: 1.2rem;
   margin-right: 0.5rem;
+}
+@media (max-width: 575.98px) {
+  .get-started .cta-info__list {
+    line-height: 2.4rem;
+  }
 }
 
 .form {
