@@ -1,0 +1,35 @@
+@use "../custom" as *;
+@use "../components/mixing" as *;
+
+.get-started {
+  padding: 4rem 0;
+  background-color: $gray-200;
+  .gradient {
+    @include gradient;
+  }
+  .cta-info {
+    padding: 3rem;
+    margin: 1rem 0;
+    &__list {
+      position: relative;
+      list-style: none;
+      display: block;
+      padding-top: 0.5rem;
+      li::before {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+// FORM CONTENT
+.form {
+  padding: 3rem;
+  @include media-breakpoint-down(lg) {
+    padding: 2rem;
+  }
+}
