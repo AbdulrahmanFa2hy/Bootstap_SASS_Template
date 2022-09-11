@@ -11123,6 +11123,22 @@ textarea.form-control-lg {
     padding: 2rem;
   }
 }
+.form .get-started-btn {
+  padding: 0.9375rem 4.375rem 0.9375rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+@media (max-width: 575.98px) {
+  .form .get-started-btn {
+    padding: 0.9375rem 2.375rem 0.9375rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+}
+.form .get-started-btn:hover {
+  opacity: 0.92;
+}
 
 .footer {
   padding: 1rem 0;

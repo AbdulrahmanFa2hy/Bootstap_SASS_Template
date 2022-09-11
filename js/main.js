@@ -2,6 +2,8 @@ let prevScroll = window.pageYOffset;
 let navbar = document.querySelector(".navbar");
 let portfolioBox = document.querySelectorAll(".filter-box");
 let filterBtns = document.querySelectorAll(".filter-btn");
+let navLink = document.querySelectorAll(".nav-link");
+let navBtn = document.querySelector(".navbar-toggler");
 
 window.onscroll = function () {
   let currentScroll = window.pageYOffset;
@@ -41,5 +43,11 @@ filterBtns.forEach((btn) => {
         }
       });
     }
+  });
+});
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navBtn.click();
   });
 });
